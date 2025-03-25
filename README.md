@@ -3,63 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDE AJANS</title>
+    <title>Türk Bayrağı</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #000;
-            color: gold;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
             display: flex;
             justify-content: center;
-            background: gray;
-            padding: 10px;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e5e5e5;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
+
+        .flag {
+            position: relative;
+            width: 400px;
+            height: 250px;
+            background-color: red;
+            border: 2px solid #d40000;
         }
-        .container {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #000;
-            color: white;
-            text-align: center;
-            padding: 10px;
+
+        .circle {
             position: absolute;
-            bottom: 0;
-            width: 100%;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .star {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 70px solid white;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>EDE AJANS</h1>
-    </header>
-    <nav>
-        <a href="#hizmetler">Hizmetler</a>
-        <a href="#portfolyo">Portföy</a>
-        <a href="#hakkimizda">Hakkımızda</a>
-        <a href="#iletisim">İletişim</a>
-    </nav>
-    <div class="container">
-        <h2>Hoşgeldiniz!</h2>
-        <p>Profesyonel grafik tasarım ve sosyal medya çözümleri sunuyoruz.</p>
+    <div class="flag">
+        <div class="circle"></div>
+        <div class="star"></div>
     </div>
-    <footer>
-        <p>&copy; 2025 EDE AJANS | Tüm Hakları Saklıdır</p>
-    </footer>
 </body>
 </html>
